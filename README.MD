@@ -16,15 +16,23 @@ or other version may work
 
 # Installation & Usage
  
-set SENDADDRESS, APP\_PASSWORD, TOADDRESS in send\_gmail.py  
  
 ```bash
 git clone git@github.com:kyo-ke/web-scraping.git
 cd web-scraping
-python send_gmail.py
 ```
  
- 
+set SENDADDRESS, APP\_PASSWORD, TOADDRESS in send\_gmail.py  
+
+```
+5 SENDADDRESS = "your_email_address@gmail.com"
+6 APP_PASSWORD = "your_application_password"
+7 TOADDRESS = "your_target_address@gmail.com"
+```
+
+```bash
+python send_gmail.py
+```
 # Author
  
 * Kyosuke Kariya
