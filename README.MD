@@ -30,6 +30,8 @@ set SENDADDRESS, APP\_PASSWORD, TOADDRESS in send\_gmail.py
 7 TOADDRESS = "your_target_address@gmail.com"
 ```
 
+execute send\_gmail.py
+
 ```bash
 python send_gmail.py
 ```
