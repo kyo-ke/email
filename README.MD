@@ -16,6 +16,7 @@ or other version may work
 
 # Installation & Usage
  
+set SENDADDRESS, APP\_PASSWORD, TOADDRESS in send\_gmail.py  
  
 ```bash
 git clone git@github.com:kyo-ke/web-scraping.git

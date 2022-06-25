@@ -2,8 +2,9 @@ import email.utils
 from email.mime.text import MIMEText
 import smtplib
 
-sadd = "your_email_address@gmail.com"
-pw = "your_application_passworld"
+SENDADDRESS = "your_email_address@gmail.com"
+APP_PASSWORD = "your_application_password"
+TOADDRESS = "your_target_address@gmail.com"
 
 def create_message(body, subject, fromAddress, toAddress):
     msg = MIMEText(body)
@@ -16,12 +17,10 @@ def create_message(body, subject, fromAddress, toAddress):
 def main():
     smtpobj = smtplib.SMTP('smtp.gmail.com', 587)
     smtpobj.starttls()
-    smtpobj.login(sadd, pw)
+    smtpobj.login(SENDADDRESS, APP_PASSWORD)
     body = "Hello World!"
     subject = "Hello"
-    fromAddress = sadd
-    toAddress = "your_target_address@gmail.com"
-    msg = create_message(body, subject, fromAddress, toAddress)
+    msg = create_message(body, subject, SENDADDRESS, TOADDRESS)
     smtpobj.send_message(msg)
     smtpobj.close()
 
